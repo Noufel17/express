@@ -1,0 +1,29 @@
+{
+  "name": "learning-express",
+  "version": "1.0.0",
+  "description": "just learning express by building a simple api",
+  "main": "index.js",
+  "scripts": {
+    "test": "run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Noufel17/express.git"
+  },
+  "keywords": [
+    "express",
+    "js",
+    "backend",
+    "server",
+    "api",
+    "SOA",
+    "architecture",
+    "maicroservices"
+  ],
+  "author": "noufel17",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Noufel17/express/issues"
+  },
+  "homepage": "https://github.com/Noufel17/express#readme"
+}
