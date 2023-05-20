@@ -2,15 +2,17 @@ const express = require("express");
 const router = express.Router();
 
 router.get("/", (req, res) => {
+  console.log(req.query.name);
   res.send("users list");
 });
 
 router.get("/new", (req, res) => {
-  res.send("new user");
+  res.render("users/new", { firstname: "TEST" });
 });
 
 router.post("/", (req, res) => {
-  res.send("create user");
+  console.log(req.body.firstname);
+  res.send(`User ${req.body.firstname} created`);
 });
 
 router

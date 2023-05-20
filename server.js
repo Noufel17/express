@@ -3,12 +3,9 @@ const app = express();
 
 app.set("view engine", "ejs");
 app.use(logger);
-app.get("/", (req, res) => {
-  res.render("index", {
-    text: "world",
-  });
-});
-
+app.use(express.static("public"));
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 function logger(req, res, next) {
   console.log(req.originalUrl);
   next();
